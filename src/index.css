@@ -18,10 +18,14 @@ code {
 
 .top-games {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .game-photo {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+
+.game-detail {
+  text-align: center;
 }
