@@ -4,17 +4,17 @@ import { Link } from 'react-router-dom';
 const Nav = () => {
 
 const navStyle = {
-    color: 'white'
+    color: 'black'
 }
 
  return (
     <nav>
      <ul className="nav-links">
-        <Link style={navStyle} to={'/topgames'}>
-            <li>Top Games</li>
+        <Link to={'/topgames'}>
+            <ul>Top Games</ul>
         </Link>
         <Link style={navStyle} to={'/search'}>
-            <li>Search</li>
+            <ul>Search</ul>
         </Link>
      </ul>
     </nav>

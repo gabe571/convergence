@@ -7,7 +7,7 @@ const Results = (props) => {
             <ul>
                 { 
                 props.gameResults.map(game => (
-                    <li key={game.id}>
+                    <ul key={game.id}>
                         <Link to={{
                             pathname: `/game/${game.name}`,
                             gameProps:{
@@ -17,7 +17,7 @@ const Results = (props) => {
                         <h3>{game.name}</h3>
                         <img src ={game.background_image} alt='game'/>
                         </Link>
-                    </li>
+                    </ul>
                 ))
                 }
             </ul>
