@@ -19,7 +19,7 @@ const GameDetail = (props) => {
   
         <ul>
           {
-            game.short_screenshots.map(ss => <li><img src={ss.image} alt='screenshot'></img></li>)
+            game.short_screenshots.map(ss => <ul><img src={ss.image} width="200" height="100" alt='screenshot'></img></ul>)
           }
         </ul>
       </div>

@@ -15,7 +15,7 @@ const Results = (props) => {
                             }
                         }}>
                         <h3>{game.name}</h3>
-                        <img src ={game.background_image} alt='game'/>
+                        <img src ={game.background_image} width="200" height="100" alt='game'/>
                         </Link>
                     </ul>
                 ))
