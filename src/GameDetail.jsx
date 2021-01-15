@@ -17,7 +17,7 @@ const GameDetail = (props) => {
             game.platforms.map(p => `${p.platform.name} | `)
           }
   
-        <ul>
+        <ul className='game-photo'>
           {
             game.short_screenshots.map(ss => <ul><img src={ss.image} width="200" height="100" alt='screenshot'></img></ul>)
           }

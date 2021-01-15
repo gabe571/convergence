@@ -18,7 +18,7 @@ const TopGames = () => {
 
   return (
     <div>
-      <ul>
+      <ul className="top-games">
       {
         games.map(game => (
           <ul key={game.id}>

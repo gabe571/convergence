@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.game-search {
+  text-align:center
+}
+
+.top-games {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+
+.game-photo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
