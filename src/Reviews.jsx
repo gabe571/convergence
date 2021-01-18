@@ -7,10 +7,10 @@ const Reviews = () => {
     const [items, setItems] = useState("items")
 
      useEffect(() => {
-         fetch(`https://rawg.io/api/reviews?`)
+         fetch(`https://api.rawg.io/api/games/3498`)
          .then(resp => resp.json())
-         .then(({results}) => setItems(results))
-     },[reviews])
+         .then(console.log)
+     },[])
 
      return (
       <div>
