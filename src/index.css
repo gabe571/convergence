@@ -12,6 +12,7 @@ code {
     monospace;
 }
 
+body {background-color: gainsboro;}
 .game-search {
   text-align:center
 }
