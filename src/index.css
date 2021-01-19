@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+.converge {
+  text-align: right;
+  color: tomato;
+  padding-right: 10px;
+}
 body {background-color: gainsboro;}
 .game-search {
   text-align:center
