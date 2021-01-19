@@ -14,8 +14,8 @@ const Results = (props) => {
                                 game: game
                             }
                         }}>
-                        <h3>{game.name}</h3>
-                        <img src ={game.background_image} width="200" height="100" alt='game'/>
+                        <img src ={game.background_image} width="700" height="500" alt='game'/>
+                        <h1 className="rn">{game.name}</h1>
                         </Link>
                     </ul>
                 ))
