@@ -16,6 +16,10 @@ a:link {
   text-decoration: none;
 }
 
+.game-search input {
+  height: 20px;
+  width: 300px;
+}
 .converge {
   text-align: left;
   color: tomato;
@@ -34,7 +38,7 @@ body {background-color: gainsboro;}
 
 .top-games {
   display:run-in;
-  margin-left: 500px;
+  margin-left: 300px;
 }
 
 .game-photo {

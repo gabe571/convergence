@@ -27,9 +27,9 @@ const Search = () => {
     <div className="game-search">
       <h1>Game Search</h1>
         <form onSubmit={onSubmit}>
-          <input type="text" placeholder="type title here.."value={search} onChange={handleChange}/>
+          <input className="searchbox" name="searchbox" type="text" placeholder="type title here.."value={search} onChange={handleChange}/>
           <br></br>
-          <input type="submit"/>
+          {/* <input type="submit"/> */}
         </form>
         <Results gameResults={results} />
     </div>
