@@ -27,7 +27,7 @@ const Search = () => {
     <div className="game-search">
       <h1>Game Search</h1>
         <form onSubmit={onSubmit}>
-          <input type="text" value={search} onChange={handleChange}/>
+          <input type="text" placeholder="type title here.."value={search} onChange={handleChange}/>
           <br></br>
           <input type="submit"/>
         </form>
