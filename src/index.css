@@ -27,8 +27,8 @@ body {background-color: gainsboro;}
 }
 
 .top-games {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display:run-in;
+  margin-left: 500px;
 }
 
 .game-photo {

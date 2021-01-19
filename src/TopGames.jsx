@@ -28,8 +28,8 @@ const TopGames = () => {
                   game: game
                 }
               }}>
-            <h3>{game.name}</h3>
-            <img src={game.background_image} width="200" height="100" alt="game"/>
+            <img src={game.background_image} width="1000" height="700" alt="game"/>
+            <h1>{game.name}</h1>
             </Link>
           </ul>
         ))
