@@ -16,6 +16,12 @@ const navStyle = {
         <Link style={navStyle} to={'/search'}>
             <ul>Search</ul>
         </Link>
+        <Link style={navStyle} to={'/Login'}>
+            <ul>Login</ul>
+        </Link>
+        <Link style={navStyle} to={'/Logout'}>
+            <ul>Logout</ul>
+        </Link>
      </ul>
     </nav>
  );
