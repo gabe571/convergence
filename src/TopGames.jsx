@@ -21,15 +21,15 @@ const TopGames = () => {
       <ul className="top-games">
       {
         games.map(game => (
-          <ul key={game.id}>
+          <ul key={game.id}className="tgb">
             <Link to={{
                 pathname: `/game/${game.name}`,
                 gameProps:{
                   game: game
                 }
               }}>
-            <img src={game.background_image} width="1000" height="700" alt="game"/>
-            <h1>{game.name}</h1>
+            <img src={game.background_image} width="700" height="500" alt="game"/>
+            <h1 className="tgn">{game.name}</h1>
             </Link>
           </ul>
         ))

@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 .converge {
   text-align: left;
   color: tomato;
@@ -22,9 +26,11 @@ code {
   margin-right: 200px;
 }
 body {background-color: gainsboro;}
+
 .game-search {
   text-align:center
 }
+
 
 .top-games {
   display:run-in;
@@ -38,4 +44,8 @@ body {background-color: gainsboro;}
 
 .game-detail {
   text-align: center;
+}
+
+.tgn {
+  color: black;
 }
