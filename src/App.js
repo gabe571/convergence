@@ -14,6 +14,8 @@ function App() {
       <div className="App">
         <Nav />
         <Switch>
+          <Route path='/Login' component={Login}/>
+          <Route path='/SignUp' component={SignUp}/>
           <Route exact path='/topgames' component={TopGames} />
           <Route exact path='/topgames' component={TopGames} />
           <Route exact path='/topgames' component={TopGames} />
