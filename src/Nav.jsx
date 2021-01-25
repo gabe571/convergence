@@ -19,7 +19,7 @@ const navStyle = {
         <Link style={navStyle} to={'/Login'}>
             <ul>Login</ul>
         </Link>
-        <Link style={navStyle} to={'/Login'}>
+        <Link style={navStyle} to={'/SignUp'}>
             <ul>Sign Up</ul>
         </Link>
         <Link style={navStyle} to={'/Logout'}>
