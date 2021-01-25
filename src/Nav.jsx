@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 const Nav = () => {
 
@@ -10,6 +10,9 @@ const navStyle = {
  return (
     <nav>
      <ul className="nav-links">
+         <Link to={'/home'}>
+         <ul>HOME</ul>
+         </Link>
         <Link to={'/topgames'}>
             <ul>Top Games</ul>
         </Link>
@@ -30,4 +33,4 @@ const navStyle = {
  );
 }
 
-export default Nav;
+export default withRouter(Nav);
