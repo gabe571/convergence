@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom';
 
 const LoginNav = () => {
 
-const navStyle = {
-    color: ''
-}
+
 
  return (
     <nav>

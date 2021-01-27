@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, {  useState } from 'react';
 import Results from './Results';
+import { withRouter } from 'react-router-dom'
 
 const Search = () => {
 
@@ -36,4 +37,4 @@ const Search = () => {
   );
 }
 
-export default Search;
+export default withRouter(Search);

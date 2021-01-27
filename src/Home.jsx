@@ -2,17 +2,15 @@ import React from 'react'
 import TopGames from './TopGames'
 import Search from './Search'
 
-class Home extends React.Component {
+const Home = () => {
 
 
-    render() {
         return(
             <div>
-                <TopGames />
                 <Search />
+                <TopGames />
             </div>
         )
-    }
 }
 
 export default Home
