@@ -12,19 +12,25 @@ code {
     monospace;
 }
 
-a:link {
+a:link, a:visited {
+  color: tomato;
+  padding: 14px 25px;
+  text-align: left;
   text-decoration: none;
-}
+  display: inline-block;
+  font-weight: bold;
+  font-size: 25px;
 
+}
 .game-search input {
   height: 20px;
   width: 300px;
 }
-.converge {
+/* .converge {
   text-align: left;
   color: tomato;
   padding-left: 10px;
-}
+} */
 
 .nav-login {
   margin-right: 200px;
