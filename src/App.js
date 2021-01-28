@@ -19,8 +19,8 @@ function App() {
         <Route path='/Home' component={Home}/>
           <Route path='/Login' component={Login}/>
           <Route path='/SignUp' component={SignUp}/>
-          <Route exact path='/topgames' component={TopGames} />
-          <Route exact path='/search' component={Search} />
+          {/* <Route exact path='/topgames' component={TopGames} />
+          <Route exact path='/search' component={Search} /> */}
           <Route path='/game/:name' component={GameDetail} />
         </Switch>
       </div>

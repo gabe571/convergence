@@ -7,13 +7,7 @@ return (
     <div className="navbar">
 <ul>
  <ul>
-   <NavLink to='/home'>Convergence</NavLink>
-   </ul>
-   <ul>
-   <NavLink to='/TopGames'>Top Games</NavLink>
-   </ul>
-   <ul>
-   <NavLink to='/Search'>Search</NavLink>
+   <NavLink to='/home'>CONVERGENCE</NavLink>
    </ul>
 </ul>
     </div>
