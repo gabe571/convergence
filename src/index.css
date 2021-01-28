@@ -16,6 +16,7 @@ code {
 }
 
 .navbar {
+  padding-top: 10px;
   text-decoration: none;
   font-weight: bold;
   font-size: 30px;
@@ -27,26 +28,23 @@ a:link, a:visited {
 }
 
 .game-search input {
-  margin-right: 100px;
+  margin-right: 30px;
   height: 20px;
   width: 500px;
   padding-top: 5px;
   border-style: none;
   border-radius: 5px;
 }
-/* .converge {
-  text-align: left;
-  color: tomato;
-  padding-left: 10px;
-} */
 
 .navlog {
+padding-right: 10px;
 text-align: right;
 }
 
-body {background-color: gainsboro;}
+body {background-color: black;}
 
 .game-search {
+  color:tomato;
   text-align:center;
 }
 
@@ -62,13 +60,24 @@ body {background-color: gainsboro;}
 }
 
 .game-detail {
+  color: tomato;
   text-align: center;
 }
 
 .tgn {
-  color: black;
+  color: tomato;
+  padding-top: 20px;
 }
 
 .rn {
-  color: black
+  color: tomato;
+  padding-top: 20px;
+}
+
+.results-container {
+  padding-top: 20px;
+}
+
+.login {
+  color:tomato;
 }

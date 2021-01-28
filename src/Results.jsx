@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Results = (props) => {
     return (
-        <div className="results=container">
+        <div className="results-container">
             <ul>
                 { 
                 props.gameResults.map(game => (
