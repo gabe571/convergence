@@ -1,21 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const LoginNav = () => {
 
-
-
  return (
-    <nav>
-     <ul className="nav-login">
-        <Link>
-            <ul>Login</ul>
-        </Link>
-        <Link>
-            <ul>Logout</ul>
-        </Link>
-     </ul>
-    </nav>
+    <div className="navlog">
+<ul>
+ <ul>
+   <NavLink to='/Login'>Login </NavLink>
+   <NavLink to='/SignUp'>Sign Up </NavLink>
+   <NavLink to='/Logout'>Logout </NavLink>
+   </ul>
+</ul>
+    </div>
  );
 }
 
