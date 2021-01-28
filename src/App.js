@@ -1,6 +1,6 @@
 import './App.css';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import TopGames from "./TopGames";
+import MustPlayGames from "./MustPlayGames";
 import Search from "./Search";
 import Nav from "./Nav";
 import Login from "./Login"
@@ -19,8 +19,6 @@ function App() {
         <Route path='/Home' component={Home}/>
           <Route path='/Login' component={Login}/>
           <Route path='/SignUp' component={SignUp}/>
-          {/* <Route exact path='/topgames' component={TopGames} />
-          <Route exact path='/search' component={Search} /> */}
           <Route path='/game/:name' component={GameDetail} />
         </Switch>
       </div>

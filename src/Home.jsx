@@ -1,5 +1,5 @@
 import React from 'react'
-import TopGames from './TopGames'
+import MustPlayGames from './MustPlayGames'
 import Search from './Search'
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
         return(
             <div>
                 <Search />
-                <TopGames />
+                <MustPlayGames />
             </div>
         )
 }
