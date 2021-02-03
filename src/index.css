@@ -89,5 +89,13 @@ body {background-color: #202020;}
 }
 
 .login {
+  margin-top: 200px;
+  text-align: center;
   color:tomato;
+}
+
+.signup {
+  margin-top: 200px;
+  text-align: center;
+  color: tomato
 }
