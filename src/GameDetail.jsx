@@ -1,6 +1,7 @@
 import LoginNav from './LoginNav'
 import GameTrailer from './GameTrailer'
-import Reviews from './Reviews'
+
+
 
 
 const GameDetail = (props) => {
@@ -29,8 +30,7 @@ const GameDetail = (props) => {
           }
         </ul>
         <div>
-         <h1>REVIEWS!</h1>
-         <Reviews />
+    
         </div>
       </div>
     );

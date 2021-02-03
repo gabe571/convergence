@@ -10,6 +10,9 @@ return (
    <NavLink to='/home'>CONVERGENCE</NavLink>
    </ul>
    <ul>
+   <NavLink to='/Reviews'>REVIEWS</NavLink>
+   </ul>
+   <ul>
    <NavLink to='/GameTrailer'>TRAILERS</NavLink>
    </ul>
 </ul>

@@ -8,6 +8,8 @@ import SignUp from "./SignUp"
 import Home from './Home'
 import GameDetail from "./GameDetail";
 import GameTrailer from './GameTrailer'
+import Review from './Review'
+import ReviewsContainer from './ReviewsContainer';
 
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
         <Route path='/Home' component={Home}/>
           <Route path='/Login' component={Login}/>
           <Route path='/SignUp' component={SignUp}/>
+          <Route path='/Reviews' component={ReviewsContainer} />
           <Route path='/game/:name' component={GameDetail} />
           <Route path='/GameTrailer' component={GameTrailer} />
         </Switch>

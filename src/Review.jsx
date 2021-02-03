@@ -7,7 +7,7 @@ const Reviews = (props) => {
     return (
  <div className="review-container">
      <div className="review-card">
-        <div className="review-content">TESTING THIS OUT</div>
+        <div className="review-content">{review.reviewed_game}</div>
      </div>
     </div>
  )

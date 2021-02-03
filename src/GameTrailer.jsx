@@ -8,6 +8,7 @@ const GameTrailer = () => {
 
     useEffect(() => {
         fetch(`https://api.rawg.io/api/games/3498/movies`)
+        .then(res => res.json())
         .then(console.log)
 
     })

@@ -67,11 +67,17 @@ body {background-color: #202020;}
 }
 
 .review-content {
-  color:tomato
+  color:tomato;
+  text-align: center;
 }
 .review-card {
+  text-align: center;
   color: black;
   outline-style: solid;
+  margin-left: 500px;
+  margin-top: 50px;
+  height: 50px;
+  width: 400px;
 }
 
 .tgn {

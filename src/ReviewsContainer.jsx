@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import Review from './Review'
-import NavBar from './NavBar'
-
 
 export default class ReviewsContainer extends Component {
 
@@ -34,16 +32,17 @@ fetch('http://localhost:3000/reviews')
       }))
   }
 
+
   render() {
     return (
       <div className="review-grid">
-        <h5 className="review-title">WHAT OUR MEMBERS ARE SAYING!</h5>
+        <h5 className="review-content">REVIEWS!</h5>
          <ul className="review-cards">
       {
         this.state.reviews.map(review => <Review key={review.id} review={review}/>)
       }  
     </ul>
-    <Form addReview={this.addReview} review={this.handleSubmit} />
+    {/* <Form addReview={this.addReview} review={this.handleSubmit} /> */}
       </div>
     )
   }
