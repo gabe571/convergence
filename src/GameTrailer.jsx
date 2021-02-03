@@ -1,20 +1,27 @@
 import React, {  useEffect, useState } from 'react';
 
-
-
 const GameTrailer = () => {
 
-    const [trailers, setTrailers] = useState('')
-
     useEffect(() => {
+        fetchMovies()
+      },[])
+    
+      const [movies, setMovies] = useState([])
+    
+      const fetchMovies = () => {
         fetch(`https://api.rawg.io/api/games/3498/movies`)
-        .then(res => res.json())
-        .then(console.log)
+        .then(resp => resp.json())
+        .then(({results}) => setMovies(results))
+      }
 
-    })
-    return(
-        <div>
-
+    return (
+        <div className="movie-content">
+            {
+            movies.map(movie => {
+                return <pre>{JSON.stringify(movie)}</pre>
+            })
+            }
+        {console.log(movies)}
         </div>
     )
 }

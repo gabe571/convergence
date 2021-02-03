@@ -80,6 +80,10 @@ body {background-color: #202020;}
   width: 400px;
 }
 
+.movie-content {
+  color:tomato
+}
+
 .tgn {
   color: tomato;
   padding-top: 20px;
