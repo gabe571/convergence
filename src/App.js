@@ -7,6 +7,7 @@ import Login from "./Login"
 import SignUp from "./SignUp"
 import Home from './Home'
 import GameDetail from "./GameDetail";
+import GameTrailer from './GameTrailer'
 
 
 function App() {
@@ -16,10 +17,11 @@ function App() {
       <div className="App">
         <Nav />
         <Switch>
-        <Route path='/' component={Home}/>
+        <Route path='/Home' component={Home}/>
           <Route path='/Login' component={Login}/>
           <Route path='/SignUp' component={SignUp}/>
           <Route path='/game/:name' component={GameDetail} />
+          <Route path='/GameTrailer' component={GameTrailer} />
         </Switch>
       </div>
     </Router>

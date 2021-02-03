@@ -23,7 +23,7 @@ const Search = () => {
     })
     setSearch()
   }
-  
+  console.log(results)
   return (
     <div className="game-search">
       <h1>Game Search</h1>

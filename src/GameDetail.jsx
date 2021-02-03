@@ -1,4 +1,7 @@
 import LoginNav from './LoginNav'
+import GameTrailer from './GameTrailer'
+
+
 const GameDetail = (props) => {
 
     const { game } = props.location.gameProps
