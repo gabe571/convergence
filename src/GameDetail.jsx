@@ -1,5 +1,6 @@
 import LoginNav from './LoginNav'
 import GameTrailer from './GameTrailer'
+import Reviews from './Reviews'
 
 
 const GameDetail = (props) => {
@@ -27,6 +28,10 @@ const GameDetail = (props) => {
             game.short_screenshots.map(ss => <ul><img src={ss.image} width="300" height="200" alt='screenshot'></img></ul>)
           }
         </ul>
+        <div>
+         <h1>REVIEWS!</h1>
+         <Reviews />
+        </div>
       </div>
     );
   }

@@ -58,11 +58,20 @@ body {background-color: #202020;}
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr; 
   margin-top: 20px;
+  margin-right: 200px;
 }
 
 .game-detail {
   color: tomato;
   text-align: center;
+}
+
+.review-content {
+  color:tomato
+}
+.review-card {
+  color: black;
+  outline-style: solid;
 }
 
 .tgn {
