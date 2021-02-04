@@ -18,9 +18,11 @@ const GameTrailer = () => {
         <div className="movie-content">
             {
             movies.map(movie => {
-                return <pre>{JSON.stringify(movie)}</pre>
+                <ul key={movie.id}className="movie">
+                <h1>TESTING!!{movie.id}</h1>
+                </ul>
             })
-            }
+         }
         {console.log(movies)}
         </div>
     )
