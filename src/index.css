@@ -74,12 +74,21 @@ body {background-color: #202020;}
   text-align: center;
   color: black;
   outline-style: solid;
-  margin-left: 500px;
-  margin-top: 50px;
-  height: 50px;
-  width: 400px;
+  margin-left: 200px;
+  margin-top: 100px;
+  width: 900px;
+  height: fit-content;
 }
 
+.review-username {
+  text-align: left;
+  color: tomato;
+}
+
+.review-rating {
+  text-align: right;
+  color: tomato;
+}
 .movie-content {
   color:tomato
 }
