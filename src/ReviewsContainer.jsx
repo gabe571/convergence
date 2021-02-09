@@ -36,7 +36,7 @@ fetch('http://localhost:3000/reviews')
   render() {
     return (
       <div className="review-grid">
-        <h5 className="review-content">REVIEWS!</h5>
+        <h1 className="review-content">REVIEWS!</h1>
          <ul className="review-cards">
       {
         this.state.reviews.map(review => <Review key={review.id} review={review}/>)

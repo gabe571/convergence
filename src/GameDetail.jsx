@@ -1,5 +1,6 @@
 import LoginNav from './LoginNav'
 import GameTrailer from './GameTrailer'
+import ReviewsContainer from './ReviewsContainer'
 
 
 
@@ -30,7 +31,7 @@ const GameDetail = (props) => {
           }
         </ul>
         <div>
-    
+          <ReviewsContainer />
         </div>
       </div>
     );
