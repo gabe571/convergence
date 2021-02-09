@@ -32,9 +32,7 @@ const MustPlayGames = () => {
             <img src={game.background_image} width="700" height="500" alt="game"/>
             <h1 className="tgn">{game.name}</h1>
             </Link>
-            <Link>
-            <h1 className="buy">Buy{game.store}</h1>
-            </Link>
+            <a className="buy"href={game.name} target="_blank">buy</a>
           </ul>
         ))
       }
