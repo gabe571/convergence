@@ -15,7 +15,7 @@ const MustPlayGames = () => {
     .then(resp => resp.json())
     .then(({results}) => setGames(results))
   }
-  console.log(games)
+  // console.log(games)
 
   return (
     <div className="mpg">
