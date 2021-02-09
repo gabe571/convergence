@@ -96,6 +96,11 @@ body {background-color: #202020;}
 .tgn {
   color: tomato;
   padding-top: 20px;
+  padding-bottom: 100px;
+  border-style: solid;
+  border-radius: 10px;
+  width: 700px;
+  text-align: center;
 }
 
 .rn {

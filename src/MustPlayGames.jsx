@@ -17,7 +17,7 @@ const MustPlayGames = () => {
   }
 
   return (
-    <div>
+    <div className="mpg">
       <ul className="top-games">
       {
         games.map(game => (
