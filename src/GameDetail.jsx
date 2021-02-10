@@ -33,7 +33,7 @@ const GameDetail = (props) => {
         <ul className='game-preview'>
           <h4>Preview</h4>
           {
-          // game.clips.map(g => {g.clip.clips.full})
+          // game.clips.map(g => {g.clip.clips})
           // console.log(game.clip.clips.full)
           }
         </ul>
