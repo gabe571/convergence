@@ -7,10 +7,10 @@ const Reviews = (props) => {
     return (
  <div className="review-container">
      <div className="review-card">
-     <div className="review-username">{review.user_username}</div>
-        <div className="review-content">{review.reviewed_game}</div>
-        <div className="review-rating">{review.rating}<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div>
-     </div>
+      <div className="review-username">{review.user_username}</div>
+         <div className="review-content">{review.reviewed_game}</div>
+            <div className="review-rating">{review.rating}<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div>
+         </div>
     </div>
  )
 }

@@ -69,6 +69,7 @@ body {background-color: #202020;}
 .review-content {
   color:tomato;
   text-align: center;
+  margin-top: 20px;
 }
 .review-card {
   text-align: center;
@@ -83,6 +84,7 @@ body {background-color: #202020;}
 .review-username {
   text-align: left;
   color: tomato;
+  margin-left: 50px;
 }
 
 .review-rating {
