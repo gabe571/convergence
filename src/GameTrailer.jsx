@@ -13,7 +13,7 @@ const GameTrailer = () => {
         .then(resp => resp.json())
         .then(({results}) => setMovies(results))
       }
-
+      console.log(movies)
     return (
         <div className="movie-content">
             {

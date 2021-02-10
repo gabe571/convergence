@@ -30,13 +30,14 @@ const GameDetail = (props) => {
             game.short_screenshots.map(ss => <ul><img src={ss.image} width="300" height="200" alt='screenshot'></img></ul>)
           }
         </ul>
-        <ul className='game-preview'>
+        {/* <ul className='game-preview'>
           <h4>Preview</h4>
-          {
-          // game.clips.map(g => {g.clip.clips})
-          // console.log(game.clip.clips.full)
-          }
-        </ul>
+          <video width="320" height="240" controls>
+          {game.clip.map(g => <source src={g.clips} type="video/mp4"/>) }
+          <source src='../Diverge.mp4' type="video/mp4"/>
+          Your browser does not support the video tag.
+        </video>
+        </ul> */}
         <div>
           <ReviewsContainer />
         </div>
