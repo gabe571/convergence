@@ -81,6 +81,9 @@ body {background-color: #202020;}
   height: fit-content;
 }
 
+.avatar {
+  margin-right: 1000px;
+}
 .review-username {
   text-align: left;
   color: tomato;
