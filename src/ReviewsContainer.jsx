@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Review from './Review'
+import ReviewForm from './ReviewForm'
 
 export default class ReviewsContainer extends Component {
 
@@ -36,7 +37,9 @@ fetch('http://localhost:3000/reviews')
   render() {
     return (
       <div className="review-grid">
+            <ReviewForm />
         <h1 className="review-content">REVIEWS!</h1>
+        <button onClick={(e) => {this.handleReview(e)}}>Drop New Review</button>
          <ul className="review-cards">
       {
         this.state.reviews.map(review => <Review key={review.id} review={review}/>)
