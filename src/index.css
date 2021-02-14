@@ -87,7 +87,7 @@ body {background-color: #202020;}
 .review-username {
   text-align: left;
   color: tomato;
-  margin-left: 50px;
+  margin-left: 75px;
 }
 
 .review-rating {
@@ -113,6 +113,10 @@ body {background-color: #202020;}
   padding-bottom: 100px;
 }
 
+.avatar {
+  border-style: solid;
+  border-color: grey;
+}
 .results-container {
   padding-top: 20px;
 }

@@ -33,10 +33,10 @@ const GameDetail = (props) => {
         {/* <ul className='game-preview'>
           <h4>Preview</h4>
           <video width="320" height="240" controls>
-          {game.clip.map(g => <source src={g.clips} type="video/mp4"/>) }
-          <source src='../Diverge.mp4' type="video/mp4"/>
+          {game.clip.map(g => <source src={g.clips} key={clip} clip={clip} type="video/mp4"/>) } */}
+          {/* <source src='../Diverge.mp4' type="video/mp4"/> */}
           Your browser does not support the video tag.
-        </video>
+        {/* </video>
         </ul> */}
         <div>
           <ReviewsContainer />
