@@ -13,7 +13,7 @@ function ReviewForm(props) {
        <form onSubmit={handleSubmit}>
          <label >Review:
              <br></br>
-           <textarea rows={10} cols={70} ref={nameEl} />
+           <textarea rows={10} cols={70} ref={nameEl} className="form" />
          </label>
          <br />
          <label>Stars:
