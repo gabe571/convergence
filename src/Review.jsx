@@ -6,6 +6,7 @@ const Reviews = (props) => {
 
     const { review } = props
     console.log(props)
+
     return (
  <div className="review-container">
      <div className="review-card">

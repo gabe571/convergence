@@ -33,19 +33,22 @@ fetch('http://localhost:3000/reviews')
       }))
   }
 
+//   handleShowForm = () => {
+//     this.setState({edit: false})
+// }
+
 
   render() {
     return (
       <div className="review-grid">
-            <ReviewForm />
+               <ReviewForm addReview={this.addReview} review={this.handleSubmit} />
         <h1 className="review-content">REVIEWS!</h1>
-        <button onClick={(e) => {this.handleReview(e)}}>Drop New Review</button>
+        {/* <button onClick={(e) => {this.handleShowForm(e)}}>Drop New Review</button> */}
          <ul className="review-cards">
       {
         this.state.reviews.map(review => <Review key={review.id} review={review}/>)
       }  
     </ul>
-    {/* <Form addReview={this.addReview} review={this.handleSubmit} /> */}
       </div>
     )
   }

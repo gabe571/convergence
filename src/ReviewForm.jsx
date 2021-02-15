@@ -1,27 +1,42 @@
-import React from 'react';
+import React from "react";
+
+export default function ReviewForm() {
+  const [review, setReview] = React.useState("");
+  const [stars, setStars] = React.useState("");
 
 
-function ReviewForm(props) {
-    const nameEl = React.useRef(null);
-  
-    const handleSubmit = e => {
-      e.preventDefault();
-      alert(nameEl.current.value);
-    };
-  
-    return (
-       <form onSubmit={handleSubmit}>
-         <label >Review:
-             <br></br>
-           <textarea rows={10} cols={70} ref={nameEl} className="form" />
-         </label>
-         <br />
-         <label>Stars:
-           <input type='number' max='5' min='0' ref={nameEl} />
-         </label>
-         <input type="submit" name="Submit" />
-       </form>
-     );
+  const handleSubmit = (event) => {
+    console.log(`
+      Review: ${review}
+      Stars: ${stars}
+    `);
+
+    event.preventDefault();
   }
 
-export default ReviewForm;
+  return (
+    <form onSubmit={handleSubmit}>
+      <h1>Create Review</h1>
+
+      <label>
+        <textarea className="form"
+          name="review"
+          type="textarea" rows={10} cols={70}
+          value={review}
+          onChange={e => setReview(e.target.value)}
+          required />
+      </label>
+      <br />
+      <label>
+        <input 
+          name="stars"
+          type="number" min='0' max='5'
+          value={stars}
+          onChange={e => setStars(e.target.value)}
+          required />
+      </label>
+      <br />
+      <button>Submit</button>
+    </form>
+  );
+}
