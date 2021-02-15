@@ -9,6 +9,7 @@ import Home from './Home'
 import GameDetail from "./GameDetail";
 import GameTrailer from './GameTrailer'
 import Review from './Review'
+import ReviewForm from './ReviewForm'
 import ReviewsContainer from './ReviewsContainer';
 
 
@@ -24,6 +25,7 @@ function App() {
           <Route path='/SignUp' component={SignUp}/>
           <Route path='/Reviews' component={ReviewsContainer} />
           <Route path='/game/:name' component={GameDetail} />
+          {/* <Route path='/ReviewForm' render={this.renderForm}/> */}
           <Route path='/GameTrailer' component={GameTrailer} />
         </Switch>
       </div>

@@ -31,7 +31,7 @@ const Search = () => {
           <input className="searchbox" name="searchbox" type="text" placeholder="  type title here.."value={search} onChange={handleChange}/>
           <br></br>
         </form>
-        <Results gameResults={results} />
+        <Results gameResults={results} key={results.id} results={results}/>
     </div>
   );
 }

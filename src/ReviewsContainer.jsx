@@ -43,7 +43,6 @@ fetch('http://localhost:3000/reviews')
       <div className="review-grid">
                <ReviewForm addReview={this.addReview} review={this.handleSubmit} />
         <h1 className="review-content">REVIEWS!</h1>
-        {/* <button onClick={(e) => {this.handleShowForm(e)}}>Drop New Review</button> */}
          <ul className="review-cards">
       {
         this.state.reviews.map(review => <Review key={review.id} review={review}/>)
