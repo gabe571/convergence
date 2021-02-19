@@ -13,7 +13,6 @@ class Login extends React.Component{
       home:[]
     }
      
-
        handleAuthResponse = (res) => {
          if(res.user){
            localStorage.token = res.token

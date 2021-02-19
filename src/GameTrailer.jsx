@@ -9,7 +9,7 @@ const GameTrailer = () => {
       const [movies, setMovies] = useState([])
     
       const fetchMovies = () => {
-        fetch(`https://api.rawg.io/api/games/3498/movies`)
+        fetch(`https://api.rawg.io/api/games/3498`)
         .then(resp => resp.json())
         .then(({results}) => setMovies(results))
       }

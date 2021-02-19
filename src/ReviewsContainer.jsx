@@ -15,6 +15,7 @@ fetch('http://localhost:3000/reviews')
 }
             
   addReview = (review) => {
+    console.log(review)
       fetch('http://localhost:3000/reviews',{
           method: "POST",
           headers: {
@@ -33,10 +34,10 @@ fetch('http://localhost:3000/reviews')
       }))
   }
 
-//   handleShowForm = () => {
-//     this.setState({edit: false})
-// }
+  handleShowForm = () => {
+    this.setState({edit: false})
 
+  }
 
   render() {
     return (

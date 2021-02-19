@@ -11,11 +11,11 @@ const MustPlayGames = () => {
   const [games, setGames] = useState([])
 
   const fetchGames = () => {
-    fetch('https://rawg.io/api/collections/must-play/games')
+    fetch('https://rawg.io/api/games')
     .then(resp => resp.json())
     .then(({results}) => setGames(results))
   }
-  // console.log(games)
+  console.log(games)
 
   return (
     <div className="mpg">
@@ -32,7 +32,7 @@ const MustPlayGames = () => {
             <img src={game.background_image} width="700" height="500" alt="game"/>
             <h1 className="tgn">{game.name}</h1>
             </Link>
-            <a className="buy"href={game.name} target="_blank">buy</a>
+            {/* <a className="buy"href={game.name} target="_blank">buy</a> */}
           </ul>
         ))
       }

@@ -4,16 +4,16 @@ class Review extends React.Component {
 
     
 render() {
-    // console.log(this.props)
+    console.log(this.props)
     return (
 <div className="review-container">
         <div className="review-card"> 
         <img src='../avatar.png' className="avatar" width="50" height="50" alt='avatar'/>
          <div className="review-username">{this.props.review.user_username}</div>
-                <div className="review-content">Review: {this.props.review.reviewed_game}</div>
-                    <div className="review-rating">{this.props.review.rating}<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div>
-                </div>
+            <div className="review-content">Review: {this.props.review.reviewed_game}</div>
+                <div className="review-rating">{this.props.review.rating}<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div>
             </div>
+         </div>
         )
     }
 }
