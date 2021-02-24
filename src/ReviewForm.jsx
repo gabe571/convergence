@@ -51,8 +51,7 @@ render() {
                     <div>
                     <label>Stars</label>
                     <br></br>
-                    {/* <StarRating  /> */}
-                    {/* <input type="number"  max="5" min="0" value={this.state.rating} onChange={this.handleRating} /> */}
+                    <StarRating  />
                     </div>
                 </div>
                 <button type="submit" className="sub-review">Create Review!</button>

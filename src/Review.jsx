@@ -4,6 +4,15 @@ import StarRating from './StarRating'
 
 class Review extends React.Component {
 
+    state = {
+        rating: ''
+    }
+
+    handleRating = (event) => {
+        this.setState ({
+            rating: event.target.value
+         })
+    }
     
 render() {
     console.log(this.props)
@@ -13,8 +22,7 @@ render() {
         <img src='../avatar.png' className="avatar" width="50" height="50" alt='avatar'/>
          <div className="review-username">{this.props.review.user_username}</div>
             <div className="review-content">Review: {this.props.review.reviewed_game}</div>
-            < StarRating />
-                <div className="review-rating">{this.props.review.rating}</div>
+            <StarRating value={this.state.rating} />
             </div>
          </div>
         )
