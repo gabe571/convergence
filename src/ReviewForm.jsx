@@ -17,6 +17,7 @@ handleReviewedGame = (event) => {
      })
 }
 
+
 handleRating = (event) => {
     this.setState ({
         rating: event.target.value
@@ -50,7 +51,7 @@ render() {
                     <div>
                     <label>Stars</label>
                     <br></br>
-                    <StarRating />
+                    {/* <StarRating  /> */}
                     {/* <input type="number"  max="5" min="0" value={this.state.rating} onChange={this.handleRating} /> */}
                     </div>
                 </div>

@@ -152,3 +152,7 @@ body {background-color: #202020;}
 .stars {
   padding-left: 800px;
 }
+
+  input[type='radio'] {
+    display: none;
+  }

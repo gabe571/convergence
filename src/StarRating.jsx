@@ -1,62 +1,77 @@
-import React from "react";
-import ReactStars from "react-rating-stars-component";
+import React, { useState } from "react";
+import { FaStar} from 'react-icons/fa'
 
-// const firstExample = {
-//   size: 30,
-//   value: 2.5,
-//   edit: false
-// };
+const StarRating = () => {
+  const [rating, setRating] = useState(null);
+  const [hover, setHover] = useState(null);
+  return (
+  <div>
+    {[ ...Array(5)].map((star, i) => {
+      const ratingValue = i + 1;
+    return <label>
+     <input type='radio'
+      name='rating' 
+      value={ratingValue}
+      onClick={() => setRating(ratingValue)}
+      />
+      <FaStar className ='star' color={ratingValue <= (hover || rating) ? "yellow" : "grey"}size={25}
+        onMouseEnter={() => setHover(ratingValue)}
+        onMouseLeave={() => setHover(null)}
+      />
+    </label>
+  })}
+  </div>
+  )
+}
 
-// const secondExample = {
-//   size: 50,
-//   count: 10,
-//   color: "black",
-//   activeColor: "red",
-//   value: 7.5,
-//   a11y: true,
+export default StarRating
+// import ReactStars from "react-rating-stars-component";
+
+// // const firstExample = {
+// //   size: 30,
+// //   value: 2.5,
+// //   edit: false
+// // };
+
+// // const secondExample = {
+// //   size: 50,
+// //   count: 10,
+// //   color: "black",
+// //   activeColor: "red",
+// //   value: 7.5,
+// //   a11y: true,
+// //   isHalf: true,
+// //   emptyIcon: <i className="far fa-star" />,
+// //   halfIcon: <i className="fa fa-star-half-alt" />,
+// //   filledIcon: <i className="fa fa-star" />,
+// //   onChange: newValue => {
+// //     console.log(`Example 2: new value is ${newValue}`);
+// //   }
+// // };
+
+
+// const fourthExample = {
+//   size: 60,
 //   isHalf: true,
-//   emptyIcon: <i className="far fa-star" />,
-//   halfIcon: <i className="fa fa-star-half-alt" />,
-//   filledIcon: <i className="fa fa-star" />,
+//   char: "⭑",
+//   value: 0,
 //   onChange: newValue => {
-//     console.log(`Example 2: new value is ${newValue}`);
+//     console.log(`Example 4: new value is ${newValue}`);
 //   }
 // };
 
-const thirdExample = {
-  size: 40,
-  count: 7,
-  isHalf: false,
-  value: 4,
-  color: "blue",
-  activeColor: "red",
-  onChange: newValue => {
-    console.log(`Example 3: new value is ${newValue}`);
-  }
-};
-
-const fourthExample = {
-  size: 60,
-  isHalf: true,
-  char: "⭑",
-  value: 3.5,
-  onChange: newValue => {
-    console.log(`Example 4: new value is ${newValue}`);
-  }
-};
-
-export default function App() {
-  return (
-    <div className="stars">
-      {/* <h1>react-rating-stars-component</h1> */}
-      {/* <h4>Readonly rating stars</h4>. */}
-      {/* <ReactStars {...firstExample} /> */}
-      {/* <h4>Your own icons with half rating and a11y</h4> */}
-      {/* <ReactStars {...secondExample} />
-      <h4>Full stars rating only, a11y and other colors</h4> */}
-      {/* <ReactStars {...thirdExample} /> */}
-      {/* <h4>Char with half rating and a11y</h4> */}
-      <ReactStars {...fourthExample} />
-    </div>
-  );
-}
+// export default function App() {
+//   return (
+//     <div className="stars">
+//       {/* <h1>react-rating-stars-component</h1> */}
+//       {/* <h4>Readonly rating stars</h4>. */}
+//       {/* <ReactStars {...firstExample} /> */}
+//       {/* <h4>Your own icons with half rating and a11y</h4> */}
+//       {/* <ReactStars {...secondExample} />
+//       <h4>Full stars rating only, a11y and other colors</h4> */}
+//       {/* <ReactStars {...thirdExample} /> */}
+//       {/* <h4>Char with half rating and a11y</h4> */}
+//       <ReactStars {...fourthExample} />
+//     </div>
+//   );
+// }

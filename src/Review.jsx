@@ -1,4 +1,6 @@
 import React from 'react'
+import StarRating from './StarRating'
+
 
 class Review extends React.Component {
 
@@ -11,7 +13,8 @@ render() {
         <img src='../avatar.png' className="avatar" width="50" height="50" alt='avatar'/>
          <div className="review-username">{this.props.review.user_username}</div>
             <div className="review-content">Review: {this.props.review.reviewed_game}</div>
-                <div className="review-rating">{this.props.review.rating}<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div>
+            < StarRating />
+                <div className="review-rating">{this.props.review.rating}</div>
             </div>
          </div>
         )
