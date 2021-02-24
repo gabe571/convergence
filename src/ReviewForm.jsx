@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import StarRating from './StarRating'
 
 
 
@@ -49,7 +50,8 @@ render() {
                     <div>
                     <label>Stars</label>
                     <br></br>
-                    <input type="number"  max="5" min="0" value={this.state.rating} onChange={this.handleRating} />
+                    <StarRating />
+                    {/* <input type="number"  max="5" min="0" value={this.state.rating} onChange={this.handleRating} /> */}
                     </div>
                 </div>
                 <button type="submit" className="sub-review">Create Review!</button>
